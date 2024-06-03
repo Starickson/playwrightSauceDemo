@@ -12,7 +12,9 @@ export class BurgerMenuPage {
     }
 
     async logoutFromInventoryPage() {
-        await this.menuBurgerButton.click()
+        await this.menuBurgerButton.click({
+            timeout: 1000,
+          });
         await this.logoutButton.click()
     }
 
