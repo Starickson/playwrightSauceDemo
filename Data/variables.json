@@ -1,0 +1,9 @@
+{
+    "base_url": "https://www.saucedemo.com/",
+    "checkout_url": "https://www.saucedemo.com/checkout-step-one.html",
+    "checkout_url_step_two": "https://www.saucedemo.com/checkout-step-two.html",
+    "inventory_url": "https://www.saucedemo.com/inventory.html",
+    "checkoutOverviewTitle": "Checkout: Overview",
+    "checkoutCompletMessage": "Thank you for your order!",
+    "cartNumberOfProducts": "1"
+}
