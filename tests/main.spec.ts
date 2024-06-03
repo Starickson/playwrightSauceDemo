@@ -28,7 +28,6 @@ test.describe('Exercicies dans le cadre des jours TP VALIDATION Framework ', () 
     await landingPage.connectionAccount(data.nameValid, data.password)
     await burgerMenu.logoutFromInventoryPage()
 
-
   });
 
   test('Exercice 2', async ({ page }) => {
