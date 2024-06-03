@@ -11,7 +11,7 @@ import { FonctionUtiles } from '../utilitaire/fonctions.ts';
 import { BurgerMenuPage } from '../pages-objects/burgerMenu.ts';
 
 
-test.describe('Exercicies dans le cadre des jours TP VALIDATION DES COMPETENCES SUR ROBOT FRAMEWORK  ', () => {
+test.describe('Exercicies dans le cadre des jours TP VALIDATION Framework ', () => {
 
   test.beforeEach(async ({ page }) => {
     await page.goto(data.base_url);
@@ -25,7 +25,7 @@ test.describe('Exercicies dans le cadre des jours TP VALIDATION DES COMPETENCES 
     await expect(page).toHaveURL(data.base_url)
     const landingPage = new LandingPage(page);
     const burgerMenu = new BurgerMenuPage(page)
-    await landingPage.connectionAccount(data.nameValid,data.password)
+    await landingPage.connectionAccount(data.nameValid, data.password)
     await burgerMenu.logoutFromInventoryPage()
 
 
@@ -34,7 +34,7 @@ test.describe('Exercicies dans le cadre des jours TP VALIDATION DES COMPETENCES 
   test('Exercice 2', async ({ page }) => {
     await expect(page).toHaveURL(data.base_url)
     const landingPage = new LandingPage(page);
-    await landingPage.connectionAccount(data.nameInvalid,data.password)
+    await landingPage.connectionAccount(data.nameInvalid, data.password)
     await expect(landingPage.headingerror).toBeVisible();
   });
 
