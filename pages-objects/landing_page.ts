@@ -23,13 +23,9 @@ export class LandingPage {
         await this.loginButton.click()
 
     }
-    async connectionWithInvalidAccount() {
-        await this.userNameInput.fill(landingPageElement.nameInvalid)
-        await this.passwordInput.fill(landingPageElement.password)
-        await this.loginButton.click()
-    }
+  
 
-    async ericconnectionWccount(username,password) {
+    async connectionAccount(username,password) {
         await this.userNameInput.fill(username)
         await this.passwordInput.fill(password)
         await this.loginButton.click()

@@ -25,7 +25,7 @@ test.describe('Exercicies dans le cadre des jours TP VALIDATION DES COMPETENCES 
     await expect(page).toHaveURL(data.base_url)
     const landingPage = new LandingPage(page);
     const burgerMenu = new BurgerMenuPage(page)
-    await landingPage.connectionWithValidAccount();
+    await landingPage.connectionAccount(data.nameValid,data.password)
     await burgerMenu.logoutFromInventoryPage()
 
 
@@ -34,7 +34,7 @@ test.describe('Exercicies dans le cadre des jours TP VALIDATION DES COMPETENCES 
   test('Exercice 2', async ({ page }) => {
     await expect(page).toHaveURL(data.base_url)
     const landingPage = new LandingPage(page);
-    await landingPage.connectionWithInvalidAccount()
+    await landingPage.connectionAccount(data.nameInvalid,data.password)
     await expect(landingPage.headingerror).toBeVisible();
   });
 

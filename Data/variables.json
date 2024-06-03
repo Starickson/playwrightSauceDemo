@@ -5,5 +5,8 @@
     "inventory_url": "https://www.saucedemo.com/inventory.html",
     "checkoutOverviewTitle": "Checkout: Overview",
     "checkoutCompletMessage": "Thank you for your order!",
-    "cartNumberOfProducts": "1"
+    "cartNumberOfProducts": "1",
+    "nameValid": "standard_user",
+    "password": "secret_sauce",
+    "nameInvalid": "locked_out_user"
 }
